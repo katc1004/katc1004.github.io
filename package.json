@@ -7,7 +7,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://${{secrets.GITHUB_TOKEN}}@github.com/katc1004/KathyChern.git",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
