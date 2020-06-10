@@ -16,6 +16,9 @@ jobs:
             - run: npm run deploy
             - run: echo "TODO add tests"
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  build-and-test:
+    jobs:
+      - build-and-test:
+        filters:
+            branches:
+              only: master
