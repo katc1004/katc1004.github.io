@@ -12,6 +12,11 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
+            - run:
+              environment:
+                EMAIL: kchern95@gmail.com
+                GIT_AUTHOR_NAME: Kathy Chern
+                GIT_COMMITTER_NAME: Kathy Chern
             - run: npm install
             - run: npm run deploy
             - run: echo "TODO add tests"
