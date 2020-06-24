@@ -1,7 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=MuseoModerno&display=swap');
 
+$dark-dark-purple: #3d394d;
 $dark-purple: #464159;
 $light-purple: #6c7b95;
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes propicLoad {
+	0% {
+		opacity: 0;
+		filter: grayscale(100%);
+	}
+
+	50% {
+		opacity: 1;
+		filter: grayscale(0%) drop-shadow(0 0 2rem $dark-purple);
+		transform: scale(1.1);
+	}
+
+	100% {
+		filter: grayscale(100%);
+		transform: scale(1);
+	}
+}
 
 body {
 	font-family: 'Lato', sans-serif;
