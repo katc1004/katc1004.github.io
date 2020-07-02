@@ -22,6 +22,4 @@ workflows:
       - build-and-test:
         filters:
             branches:
-              only: 
-                - source
-                - domain-changes
+              only: source
