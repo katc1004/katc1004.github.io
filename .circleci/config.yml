@@ -13,6 +13,7 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
+            - run: npm run gh-pages-clean
             - run: npm run deploy
             - run: echo "TODO add tests"
 workflows:
