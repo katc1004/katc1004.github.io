@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=MuseoModerno&display=swap');
+
+$brown: #795349;
+$gradient-dark: #c1a18e;
+$gradient-light: #f2e9d4;
+
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes propicLoad {
+	0% {
+		opacity: 0;
+		-webkit-filter: grayscale(100%) brightness(1.1);
+		        filter: grayscale(100%) brightness(1.1);
+	}
+
+	50% {
+		opacity: 1;
+		-webkit-filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
+		        filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+
+	100% {
+		-webkit-filter: grayscale(100%) brightness(1.1);
+		        filter: grayscale(100%) brightness(1.1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+@keyframes propicLoad {
+	0% {
+		opacity: 0;
+		-webkit-filter: grayscale(100%) brightness(1.1);
+		        filter: grayscale(100%) brightness(1.1);
+	}
+
+	50% {
+		opacity: 1;
+		-webkit-filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
+		        filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
+		-webkit-transform: scale(1.1);
+		        transform: scale(1.1);
+	}
+
+	100% {
+		-webkit-filter: grayscale(100%) brightness(1.1);
+		        filter: grayscale(100%) brightness(1.1);
+		-webkit-transform: scale(1);
+		        transform: scale(1);
+	}
+}
+
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+
+	span {
+		font-family: 'MuseoModerno', serif;
+	}
+}
