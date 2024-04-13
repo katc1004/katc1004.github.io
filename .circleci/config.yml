@@ -8,7 +8,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "SHA256:kn9a7dgc/DE81vuUwpGwHO2yQuCWJtFJYCDe4tRltNs"
+            - "SHA256:slVYjlSQGalWKOo+hm+Ik6+yz0QbrVD7sCcbAB0/+QU"
       - checkout
       - run: sudo npm install -g npm@latest
       - node/install-packages:
