@@ -10,9 +10,10 @@ jobs:
           fingerprints:
             - "5f:9d:2e:c5:be:ce:a6:e0:48:62:58:73:9b:a7:4c:dc"
       - checkout
+      - run: sudo npm install -g npm@latest
       - node/install-packages:
-          pkg-manager: npm
-          with-cache: true
+          cache-path: ~/project/node_modules
+          override-ci-command: npm install
       - run:
           command: npm run gh-pages-clean
       - run:
