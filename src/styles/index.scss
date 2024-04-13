@@ -1,12 +1,12 @@
 @import 'general';
 
 body {
-	color: $dark-dark-purple;
+	color: $brown;
 	background-repeat: no-repeat;
     background-attachment: fixed;
-	background-image: -webkit-gradient(linear, left top, left bottom, from($light-purple), to($dark-purple));
-	background-image: -o-linear-gradient($light-purple, $dark-purple);
-	background-image: linear-gradient($light-purple, $dark-purple);
+	background-image: -webkit-gradient(linear, left top, left bottom, from($gradient-light), to($gradient-dark));
+	background-image: -o-linear-gradient($gradient-light, $gradient-dark);
+	background-image: linear-gradient($gradient-light, $gradient-dark);
 }
 
 div #about {
@@ -35,20 +35,20 @@ div #about {
 			        animation: propicLoad 1.5s;
 			-o-object-fit: cover;
 			   object-fit: cover;
-			-o-object-position: 50% 80%;
-			   object-position: 50% 80%;
+			-o-object-position: 50% 40%;
+			   object-position: 50% 40%;
 			width: 12em;
 			height: 12em;
 			border-radius: 50%;
-			-webkit-filter: grayscale(100%);
-			        filter: grayscale(100%);
+			-webkit-filter: grayscale(100%) brightness(1.1);
+			        filter: grayscale(100%) brightness(1.1);
 			-webkit-transition: all 0.50s ease-in-out;
 		    -o-transition: all 0.50s ease-in-out;
 			transition: all 0.50s ease-in-out;
 
 			&:hover {
-				-webkit-filter: grayscale(0%) drop-shadow(0 0 2rem $dark-purple);
-				        filter: grayscale(0%) drop-shadow(0 0 2rem $dark-purple);
+				-webkit-filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
+				        filter: grayscale(0%) brightness(1.0) drop-shadow(0 0 2rem $gradient-dark);
 				-webkit-transform: scale(1.1);
 				    -ms-transform: scale(1.1);
 				        transform: scale(1.1);
@@ -67,7 +67,7 @@ div #about {
 		a .icon {
 			padding: 10px;
 			border-radius: 50%;
-			color: $dark-dark-purple;
+			color: $brown;
 			text-decoration: none;
 			margin: 0.25em;
 			-webkit-transition: background 0.50s ease-in-out;
@@ -75,7 +75,7 @@ div #about {
 			transition: background 0.50s ease-in-out;
 
 			&:hover {
-				background-color: rgba(255, 255, 255, 0.1);
+				background-color: rgba(255, 255, 255, 0.25);
 			}
 		}
 	}
