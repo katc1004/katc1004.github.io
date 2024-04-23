@@ -24,7 +24,7 @@
     "sass": "^1.75.0"
   },
   "devDependencies": {
-    "gh-pages": "^3.0.0",
+    "gh-pages": "^5.0.0",
     "prettier": "2.0.5"
   },
   "repository": {
