@@ -5,6 +5,7 @@ jobs:
   build-and-test:
     executor:
       name: node/default
+      tag: '18.19'
     steps:
       - add_ssh_keys:
           fingerprints:
