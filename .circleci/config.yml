@@ -9,7 +9,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "SHA256:ffXN5tad3STQqoHUK3PDo1XjubPJk0lEhZ5RwAhJLFA"
+            - "SHA256:Xqq1xaVN01qyZplyHNz09dnSlswpwmL2or9WOmMXfLQ"
       - checkout
       - node/install-packages:
           cache-path: ~/project/node_modules
