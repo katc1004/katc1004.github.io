@@ -17,9 +17,6 @@ jobs:
       - run:
           command: npm run gh-pages-clean
       - run:
-          name: Show CircleCI public key
-          command: cat /home/circleci/.ssh/id_rsa.pub
-      - run:
           command: npm run deploy
       - run:
           command: echo "TODO add tests"
