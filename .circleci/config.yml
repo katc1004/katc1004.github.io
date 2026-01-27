@@ -11,7 +11,6 @@ jobs:
           fingerprints:
             - "SHA256:ffXN5tad3STQqoHUK3PDo1XjubPJk0lEhZ5RwAhJLFA"
       - checkout
-      - run: sudo npm install -g npm@latest
       - node/install-packages:
           cache-path: ~/project/node_modules
           override-ci-command: npm install
